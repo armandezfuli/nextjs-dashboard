@@ -330,7 +330,7 @@ export default function EditInvoiceForm({
     invoice: InvoiceForm
     customers: CustomerField[]
 }) {
-    const initialState = { message: null, errors: {} }
+    const initialState = { message: "", errors: {} };
 
     const updateInvoiceWithId = async (prevState: any, formData: FormData) => {
         return updateInvoice(invoice.id, formData)
